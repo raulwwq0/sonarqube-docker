@@ -1,0 +1,13 @@
+{
+  "name": "sonarqube_docker",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "sonar:scan": "sonar-scanner",
+    "sonar:up": "./prepare-volumes.sh && docker compose up -d --build",
+    "sonar:down": "docker compose down"
+  },
+  "devDependencies": {
+    "sonarqube-scanner": "^3.0.1"
+  }
+}
